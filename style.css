@@ -290,7 +290,7 @@ body.dark #fiqhSelect {
   {
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
+    row-gap: 12px;
     font-size: 0.95em;
   }
   
@@ -353,6 +353,7 @@ body.dark #fiqhSelect {
   }
 
 }
+
 
 
 
