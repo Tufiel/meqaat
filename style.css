@@ -283,6 +283,13 @@ body.dark #fiqhSelect {
     overflow: auto;
   }
   
+ #arabicNamazNames
+  {
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+    font-size: 0.95em;
+  }
   
   #left, #right {
     width: 100%;
@@ -307,9 +314,12 @@ body.dark #fiqhSelect {
     margin: 0;
    min-width: fit-content;
     gap: 6px;
-    row-gap: 13px;
+    row-gap: 25px;
   }
 
+  #left{
+    min-width: 120px;
+  }
   #top
   {
     position: static;
@@ -328,6 +338,10 @@ body.dark #fiqhSelect {
   left: 50%;
   transform: translate(-50%, -50%);
   }
-  
+  #right,#left,#engNamazNames
+  {
+    margin: 0;
+    padding: 0;
+  }
 
 }
