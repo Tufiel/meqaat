@@ -102,9 +102,14 @@ display: none;
 	padding: 10px;
 }
 
+@font-face {
+  font-family: 'DS-Digital';
+  src: url('DS-DIGIT.TTF') format('truetype');
+}
 .redColor
 {
 	color: red;
+  font-family: 'DS-Digital', monospace;
 }
 
 #marqueeDiv
@@ -275,3 +280,4 @@ body.dark #fiqhSelect {
   
 
 }
+
