@@ -27,6 +27,10 @@ h2
 	background-color: black;
   border-radius: 10px;
 }
+#kalimah
+{
+	color:gold;
+}
 
 #msgBox{
 position: fixed;
@@ -353,6 +357,7 @@ body.dark #fiqhSelect {
   }
 
 }
+
 
 
 
