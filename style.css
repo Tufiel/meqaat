@@ -1,0 +1,277 @@
+* {
+	margin: 0;
+	padding: 5px;
+	box-sizing: border-box;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: white;
+}
+
+#board
+{
+	position: absolute;
+	left: 50%;
+	top: 120px;
+	transform: translateX(-50%);
+	width: 100%;
+	max-width: 800px;
+	height: auto;
+	max-height: 100vh;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: black;
+  border-radius: 10px;
+}
+
+#msgBox{
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 10000;
+background-color: blanchedalmond;
+border-radius: 10px;
+padding: 10px;
+display: none;
+}
+
+#msg
+{
+  color: black;
+}
+
+#top
+{
+  position: relative;
+  top: 10px;
+	display: flex;
+	justify-content:center;
+	gap: 20px;
+	align-items: center;
+	padding: 10px;
+}
+
+#top img
+{
+	width: 100px;
+	height: auto;
+	border-radius: 50%;
+}
+
+#top img:hover
+{
+	transform: scale(1.1);
+	transition: all 0.3s ease-in-out;
+}
+
+#kalimah h1
+{
+	color: gold;
+	font-size: 200%;
+	text-align: center;
+}
+#middle
+{
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	justify-items: space-between;
+}
+
+#bigImg
+{
+	flex-grow: 1;
+}
+
+.flexRow
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+	padding: 10px;
+}
+.flexCol
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	padding: 10px;
+}
+
+.redColor
+{
+	color: red;
+}
+
+#marqueeDiv
+{
+	width: 100%;
+	height: auto;
+	box-shadow: 2px 2px 1px rgb(38, 5, 5),-2px -2px 1px rgb(38, 5, 5);
+	overflow: hidden;
+	background-color: black;
+}
+/* 🔹 Settings Box */
+.settings-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  background: #f8fafc;      /* light slate bg */
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
+
+.settings-box div {
+  max-width: 300px;
+}
+
+/* 🔹 Individual Items */
+.setting-item {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+/* 🔹 Input */
+#districtInput {
+  flex: 1;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #000;
+  background-color: #fff;
+}
+
+/* 🔹 Button */
+.setting-item button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.setting-item button:hover {
+  background: #1e40af;
+}
+
+/* 🔹 Select Dropdown */
+#fiqhSelect {
+  flex: 1;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #000;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* ✅ Optional dark mode */
+body.dark .settings-box {
+  background: #1e293b;
+}
+body.dark #districtInput,
+body.dark #fiqhSelect {
+  background: #334155;
+  border: 1px solid #555;
+  color: #fff;
+}
+
+/* Suggestions Box */
+/* Suggestions Box */
+#suggestionsList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: #f9fafb;      /* light gray background */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  max-height: 150px;
+  overflow-y: auto;
+  font-size: 14px;
+  position: absolute;
+  z-index: 1000;
+  width: 220px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+#suggestionsList li {
+  padding: 8px;
+  cursor: pointer;
+  color: #111827;           /* dark text */
+  background: #f9fafb;
+}
+
+#suggestionsList li:hover {
+  background: #3b82f6;      /* blue highlight */
+  color: #fff;              /* white text on hover */
+}
+
+
+@media (max-width: 600px) {
+  #board {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+  }
+  
+  
+  #left, #right {
+    width: 100%;
+  }
+  
+  #bigImg img {
+    width: 100%;
+    height: auto;
+  }
+
+  h2{
+    font-size: 1em;
+  }
+
+  #namazTimings{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+   min-width: fit-content;
+    gap: 6px;
+  }
+
+  #top
+  {
+    position: static;
+    top: 20px;
+  }
+
+  #top img {
+    width: 70px;
+    height: auto;
+  }
+
+  #msgBox
+  {
+    position: fixed;
+    top: 10px;
+  }
+  
+
+}
