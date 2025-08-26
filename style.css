@@ -27,7 +27,7 @@ h2
 	background-color: black;
   border-radius: 10px;
 }
-#kalimah
+#kalimah h2
 {
 	color:gold;
 }
@@ -357,6 +357,7 @@ body.dark #fiqhSelect {
   }
 
 }
+
 
 
 
