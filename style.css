@@ -14,7 +14,8 @@ h2
 #board
 {
 	position: absolute;
-	left: 50%;
+	left: 0;
+	right:0;
 	top: 120px;
 	transform: translateX(-50%);
 	width: 100%;
@@ -345,6 +346,7 @@ body.dark #fiqhSelect {
   }
 
 }
+
 
 
 
