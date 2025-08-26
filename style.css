@@ -317,7 +317,7 @@ body.dark #fiqhSelect {
     margin: 0;
    min-width: fit-content;
     gap: 6px;
-    row-gap: 25px;
+    row-gap: 20px;
   }
 
   #left{
@@ -353,4 +353,5 @@ body.dark #fiqhSelect {
   }
 
 }
+
 
